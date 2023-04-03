@@ -16,7 +16,7 @@ pipeline {
           stage('read csv') {
             steps {
               script {
-                  def fileBase64 = input message: 'Please provide a file', parameters: [includeFile('product.csv')]
+                  def fileBase64 = input message: 'Please provide a file', parameters: [fileParam('product.csv')]
                   node {
                     //withEnv(["fileBase64=$fileBase64"]) {
                                              //              sh 'echo $fileBase64 | base64 -d > products.csv'
