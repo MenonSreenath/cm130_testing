@@ -11,12 +11,12 @@ pipeline {
           stage('read csv') {
             steps {
               script {
-                 
-                        def inputCSVPath = input message: 'Upload file', parameters: [file(name: 'products.csv', description: 'Upload only CSV file')]
-                        def csvContent = readFile "${products.csv}"
-                        
-                         echo ("CSV FILE PATH IS : ${inputCSVPath}")
-                         echo("CSV CONTENT IS: ${csvContent}") 
+                 def fileBase64 = input message: 'Please provide a file', parameters: [base64File('file')]
+                 node {
+                     withEnv(["fileBase64=$fileBase64"]) {
+                                                           sh 'echo $fileBase64 | base64 -d > myFile.txt'
+        }
+        }
         }
         }
         }
