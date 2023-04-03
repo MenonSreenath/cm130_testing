@@ -21,14 +21,14 @@ pipeline {
                 //node {
                         //def file_in_workspace = unstashParam "products.csv"
                                 //sh "cat ${file_in_workspace}"
-                    }
+                    //}
                   def fileBase64 = input message: 'Please provide a file', parameters: [File('product.csv')]
                   node {
                     //withEnv(["fileBase64=$fileBase64"]) {
                                              //              sh 'echo $fileBase64 | base64 -d > products.csv'
                    sh 'cat products.csv'
         //}
-        }
+        //}
         }
         }
         }
