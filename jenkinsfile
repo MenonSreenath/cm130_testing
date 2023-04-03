@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('clear ws'){
             steps{
-            ([$class: 'WsCleanup'])
+            cleanWs()
             }
             }
         stage('Git Checkout') {
