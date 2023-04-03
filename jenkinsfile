@@ -36,7 +36,8 @@ pipeline {
               env.WORKSPACE = pwd()
                 def version = readFile "${env.WORKSPACE}/products.csv"
                 
-                sh 'cat products.csv'
+                sh 'cat products.csv > file3.txt'
+                sh 'cat file3.txt'
                 }
         }
         }
