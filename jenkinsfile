@@ -1,0 +1,25 @@
+pipeline {
+    agent {
+        node ('agent001')
+    }
+    stages {
+        stage('Git Checkout') {
+            steps {
+              git branch: 'main', url: 'https://github.com/MenonSreenath/edu_project1.git'
+            }
+          }
+          stage('read csv') {
+            steps {
+              script {
+                 
+                        def inputCSVPath = input message: 'Upload file', parameters: [file(name: 'Test.csv', description: 'Upload only CSV file')]
+                        def csvContent = readFile "${inputCSVPath}"
+                        
+                         echo ("CSV FILE PATH IS : ${inputCSVPath}")
+                         echo("CSV CONTENT IS: ${csvContent}") 
+        }
+        }
+        }
+        }
+        }
+            
