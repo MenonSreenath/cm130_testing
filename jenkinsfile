@@ -22,7 +22,7 @@ pipeline {
                     ])
                     ])
                     
-                    sh 'cat produscts.csv'
+                    sh 'cat products.csv'
                     
         }
         }
