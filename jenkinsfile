@@ -22,7 +22,9 @@ pipeline {
                     ])
                     ])
                     
-                    sh 'cat products.csv'
+                    sh 'cat products.csv > file2.txt'
+                    sh 'cat file2.txt'
+                    
                     
         }
         }
