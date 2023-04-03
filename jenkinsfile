@@ -13,35 +13,15 @@ pipeline {
               git branch: 'main', url: 'https://github.com/MenonSreenath/cm130_testing.git'
             }
           }
-          stage('read csv') {
+          
+        stage ('read csv2') {
             steps {
-              script {
-              properties([
-                  parameters([
-                    base64File(name: 'products.csv', description: "FIle to read")
-                    ])
-                    ])
-                    
-                    sh 'cat products.csv > file2.txt'
-                    sh 'cat file2.txt'
-                 
+             script{
+              env.WORKSPACE = pwd()
+                def version = readFile "${env.WORKSPACE}/products.csv"
+                
+                sh 'cat products.csv'
                 }
-            }
-        }
-        stage('read csv1') {
-            steps {
-              script {
-                def fileBase64 = input message: 'Please provide a file', parameters: [base64File('products.csv')]
-                node {
-                        //withEnv(["fileBase64=$fileBase64"]) {
-                                        //sh 'echo $fileBase64 | base64 -d > myFile.txt'
-                                        
-                          sh 'cat products.csv'
-        
-    }
-   
-}
-        
         }
         }
         }
