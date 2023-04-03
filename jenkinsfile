@@ -20,7 +20,7 @@ pipeline {
                   node {
                     withEnv(["fileBase64=$fileBase64"]) {
                                                            sh 'echo $fileBase64 | base64 -d > products.csv'
-                   sh cat products.csv
+                   sh 'cat products.csv'
         }
         }
         }
