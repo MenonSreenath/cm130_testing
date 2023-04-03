@@ -1,0 +1,73 @@
+id,product,wheelbase,engine,horsepower,avgmileage,price
+1,Bike,27,Gas,111,21,13495
+2,Car,88.6,Diesel,111,21,16500
+3,Scooter,28,Hybrid and Electric ,154,19,16500
+4,Bike,26,Diesel,102,24,13950
+5,Car,99.4,Gas,115,18,17450
+6,Car,99.8,Gas,110,19,15250
+9,Bike,29,Hybrid and Electric ,110,19,18920
+10,Truck ,101.2,Diesel,101,23,16430
+11,Car,101.2,Diesel,101,23,16925
+13,Bike,29,Hybrid and Electric ,121,21,20970
+14,Scooter,28,Diesel,182,16,30760
+15,Car,103.5,Gas,182,16,41315
+16,Car,110,Gas,182,15,36880
+17,Truck ,88.4,Hybrid and Electric ,48,47,7895
+18,Truck ,94.5,Diesel,70,38,6295
+19,Car,94.5,Hybrid and Electric ,70,38,6575
+20,Bike,29,Diesel,68,31,6377
+27,Car,93.7,Gas,68,31,6229
+28,Scooter,26,Diesel,76,30,7295
+29,Bike,28,Hybrid and Electric ,101,24,12945
+30,Car,96.5,Diesel,100,25,10345
+31,Bike,29,Diesel,78,24,6785
+32,Bike,26,Diesel,70,38,12345
+33,Car,94.5,Hybrid and Electric ,70,38,13567
+34,Truck ,113,Diesel,176,15,32250
+35,Scooter,27,Diesel,176,15,35550
+36,Bike,28,Gas,262,13,36000
+37,Car,93.1,Hybrid and Electric ,68,30,5195
+38,Bike,29,Diesel,68,31,6095
+39,Car,93.1,Hybrid and Electric ,68,31,6795
+43,Scooter,95.3,Gas,101,17,11845
+44,Car,104.9,Diesel,72,31,18344
+45,Bike,110,Diesel,123,22,25552
+46,Car,110,Hybrid and Electric ,123,22,28248
+47,Truck ,120.9,Diesel,184,14,40960
+49,Car,112,Diesel,184,14,45400
+50,Bike,28,Gas,68,37,5389
+51,Car,93.7,Diesel,68,31,6189
+52,Bike,96.3,Hybrid and Electric ,88,25,6989
+53,Truck ,96.3,Gas,88,25,8189
+54,Car,94.5,Diesel,55,45,7099
+55,Bike,94.5,Gas,69,31,6649
+56,Scooter,94.5,Hybrid and Electric ,69,31,6849
+57,Truck ,94.5,Diesel,69,31,7349
+61,Car,100.4,Diesel,152,19,13499
+62,Truck ,89.5,Hybrid and Electric ,207,17,34028
+63,Car,89.5,,207,17,37028
+66,Bike,27,Gas,288,17,35000
+67,Car,95.7,Diesel,62,35,5348
+68,Bike,26,Hybrid and Electric ,62,31,6338
+69,Car,95.7,Hybrid and Electric ,62,31,6488
+70,Scooter,28,Diesel,62,31,6918
+71,Truck ,95.7,Hybrid and Electric ,62,27,7898
+79,Car,95.7,Gas,62,27,8778
+80,Car,104.5,Hybrid and Electric ,156,19,15750
+81,Car,97.3,Hybrid and Electric ,52,37,7775
+82,Truck ,97.3,Diesel,85,27,7975
+86,Bike,27,Hybrid and Electric ,52,37,7995
+87,Car,97.3,Diesel,100,26,9995
+88,Bike,28,Gas,114,23,12940
+89,Car,104.3,Diesel,114,23,91234
+90,Scooter,29,Hybrid and Electric ,120,31,8900
+91,Truck ,110,Diesel,130,24,6700
+92,Bike,26,Gas,125,25,56000
+93,Truck ,110.5,Hybrid and Electric ,120,34,7500
+94,Truck ,115.5,Diesel,130,21,8500
+95,Bike,28.5,Diesel,160,26,34560
+96,Truck ,112.5,Hybrid and Electric ,157,27,56789
+97,Truck ,112.3,Gas,187,29,2345
+98,Truck ,112.4,Diesel,190,30,45678
+99,Scooter,27.6,Hybrid and Electric ,100,32,34567
+100,Scooter,25.5,Gas,120,33,4567
