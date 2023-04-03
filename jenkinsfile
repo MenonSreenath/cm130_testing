@@ -12,8 +12,8 @@ pipeline {
             steps {
               script {
                  
-                        def inputCSVPath = input message: 'Upload file', parameters: [file(name: 'Test.csv', description: 'Upload only CSV file')]
-                        def csvContent = readFile "${inputCSVPath}"
+                        def inputCSVPath = input message: 'Upload file', parameters: [file(name: 'products.csv', description: 'Upload only CSV file')]
+                        def csvContent = readFile "${./products.csv}"
                         
                          echo ("CSV FILE PATH IS : ${inputCSVPath}")
                          echo("CSV CONTENT IS: ${csvContent}") 
