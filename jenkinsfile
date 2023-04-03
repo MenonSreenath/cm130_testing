@@ -19,8 +19,10 @@ pipeline {
               properties([
                   parameters([
                     base64File(name: 'products.csv', description: "FIle to read")
-                    sh 'cat produscts.csv' ])
                     ])
+                    ])
+                    
+                    sh 'cat produscts.csv'
                     
         }
         }
