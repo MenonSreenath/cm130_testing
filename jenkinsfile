@@ -18,7 +18,7 @@ pipeline {
               script {
                   def fileBase64 = input message: 'Please provide a file', parameters: [base64File('file')]
                   node {
-                    withEnv(["fileBase64=$fileBase64"]) {
+                    //withEnv(["fileBase64=$fileBase64"]) {
                                              //              sh 'echo $fileBase64 | base64 -d > products.csv'
                    sh 'cat products.csv'
         }
