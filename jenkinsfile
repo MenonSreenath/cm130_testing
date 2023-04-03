@@ -14,6 +14,22 @@ pipeline {
             }
           }
           
+          stage('read csv') {
+            steps {
+              script {
+              properties([
+                  parameters([
+                    base64File(name: 'products.csv', description: "FIle to read")
+                    ])
+                    ])
+                    
+                    sh 'cat products.csv > file2.txt'
+                    sh 'cat file2.txt'
+                 
+                }
+            }
+        }
+          
         stage ('read csv2') {
             steps {
              script{
