@@ -3,6 +3,11 @@ pipeline {
         node ('master')
     }
     stages {
+        stage('clear ws'){
+            steps{
+            ([$class: 'WsCleanup'])
+            }
+            }
         stage('Git Checkout') {
             steps {
               git branch: 'main', url: 'https://github.com/MenonSreenath/cm130_testing.git'
