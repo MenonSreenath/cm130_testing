@@ -24,11 +24,24 @@ pipeline {
                     
                     sh 'cat products.csv > file2.txt'
                     sh 'cat file2.txt'
-                    
-                    
+                 
+                }
+            }
         }
-        }
-        }
+        stage('read csv1') {
+            steps {
+              script {
+                def fileBase64 = input message: 'Please provide a file', parameters: [base64File('products.csv')]
+                node {
+                        //withEnv(["fileBase64=$fileBase64"]) {
+                                        //sh 'echo $fileBase64 | base64 -d > myFile.txt'
+                                        
+                          sh 'cat products.csv'
+        
+    }
+   
+}
+        
         }
         }
             
