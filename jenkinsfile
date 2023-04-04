@@ -3,7 +3,7 @@ pipeline {
         node ('master')
     }
     parameters {
-    base64File 'products.csv'
+    base64File 'abc'
   }
     stages {
         stage('clear ws'){
@@ -19,8 +19,8 @@ pipeline {
           
         stage ('read csv2') {
             steps {
-                withFileParameter('products.csv') {
-                                    sh 'cat products.csv'
+                withFileParameter('abc') {
+                                    sh 'cat $abc'
                                   }
                                 }
                                 }
