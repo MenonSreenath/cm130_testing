@@ -17,14 +17,11 @@ pipeline {
         stage ('read csv2') {
             steps {
              script{
-              env.WORKSPACE = pwd()
-                def version = readFile "${env.WORKSPACE}/products.csv"
-                
-                sh 'cat products.csv > file3.txt'
-                sh 'cat file3.txt'
-                }
-               }
-              }
+              node  {
+                    wrap([$delegate: parameters.myFileParam]) {
+                                    sh 'cat myFileParam'
+                                  }
+                                }
               
          stage ('Run Python') {
             steps {
