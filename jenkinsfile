@@ -16,10 +16,8 @@ pipeline {
           
         stage ('read csv2') {
             steps {
-             script{
-              node  {
-                    wrap([$delegate: parameters.myFileParam]) {
-                                    sh 'cat myFileParam'
+                withFileParameter(name:'products.csv', allowNoFile: true)
+                                    sh 'cat products.csv'
                                   }
                                 }
                                 }
