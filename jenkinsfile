@@ -2,6 +2,9 @@ pipeline {
     agent {
         node ('master')
     }
+    parameters {
+    base64File 'products.csv'
+  }
     stages {
         stage('clear ws'){
             steps{
