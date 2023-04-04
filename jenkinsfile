@@ -16,7 +16,7 @@ pipeline {
           
         stage ('read csv2') {
             steps {
-                withFileParameter(name:'products.csv', allowNoFile: true){
+                withFileParameter(name:'products.csv') {
                                     sh 'cat products.csv'
                                   }
                                 }
