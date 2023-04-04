@@ -22,6 +22,9 @@ pipeline {
                                     sh 'cat myFileParam'
                                   }
                                 }
+                                }
+                                }
+                                }
               
          stage ('Run Python') {
             steps {
