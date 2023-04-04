@@ -39,6 +39,14 @@ pipeline {
                 sh 'cat products.csv > file3.txt'
                 sh 'cat file3.txt'
                 }
+               }
+              }
+              
+         stage ('Run Python') {
+            steps {
+             script{
+                sh 'python3 sshtest.py'
+                }
         }
         }
         }
