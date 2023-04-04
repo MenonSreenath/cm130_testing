@@ -1,5 +1,5 @@
 from itertools import product
-import pandas as pd
+import panda as pd
 
 data = pd.read_csv("products.csv")
 df = pd.DataFrame(data)
