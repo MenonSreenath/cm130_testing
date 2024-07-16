@@ -2,6 +2,9 @@ pipeline {
     agent {
         node ('master')
     }
+    parameters {
+    base64File 'abc'
+  }
     stages {
         stage('clear ws'){
             steps{
@@ -16,15 +19,11 @@ pipeline {
           
         stage ('read csv2') {
             steps {
-             script{
-              env.WORKSPACE = pwd()
-                def version = readFile "${env.WORKSPACE}/products.csv"
-                
-                sh 'cat products.csv > file3.txt'
-                sh 'cat file3.txt'
-                }
-               }
-              }
+                withFileParameter('abc') {
+                                    sh 'cat $abc'
+                                  }
+                                }
+                                }
               
          stage ('Run Python') {
             steps {
